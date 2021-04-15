@@ -1,8 +1,7 @@
+import React, { FC } from 'react';
 import { AppProps } from 'next/dist/next-server/lib/router/router';
-import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
 
-function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const App: FC<AppProps> = ({ Component, pageProps }) => <Component {...pageProps} />;
 
 export default App;
